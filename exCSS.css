@@ -1,0 +1,658 @@
+
+/*couleur*/
+:root {
+	--aqua: #0ac587;
+	--blue: #040f4d;
+	--white: #e0d0d0;
+	--yellow: #c1f506;
+	--sapin: rgb(2, 53, 2);
+	--cloud: rgb(155, 233, 209, 0.3);
+	--sunDown: #e67518;
+	--wheel: #41155a;
+
+}
+
+body {
+	animation: sky 12s linear infinite;
+}
+@keyframes sky {
+	to {background-color: var(--blue);}
+	from {background-color: var(--sunDown);}
+}
+/* stars--------------------------------*/
+.star{
+	color:var(--white); 
+	position: absolute;
+	z-index: 1;
+	bottom: 65%;
+	left:10%;
+	animation: star 2s linear infinite;
+	transform: rotate(35deg);
+}
+.star1{
+	color:var(--white); 
+	position: absolute;
+	z-index: 1;
+	bottom:70%;
+	left: 30%;
+	animation: star 1s linear infinite;
+}
+.star2{
+	color:var(--white); 
+	position: absolute;
+	z-index: 1;
+	bottom: 75%;
+	left: 70%;
+	animation: star 750ms linear infinite;
+	transform: rotate(35deg);
+}
+.star3{
+	color:var(--white); 
+	position: absolute;
+	z-index: 1;
+	bottom: 80%;
+	left: 65%;
+	animation: star 2s linear infinite;
+}
+.star4{
+	color:var(--white); 
+	position: absolute;
+	z-index: 1;
+	bottom: 85%;
+	left: 50%;
+	animation: star 1s linear infinite;
+	transform: rotate(35deg);
+}
+.star5{
+	color:var(--white); 
+	position: absolute;
+	z-index: 1;
+	bottom: 90%;
+	left: 40%;
+	animation: star 750ms linear infinite;
+	
+}
+@keyframes star {
+	to{color: var(--sunDown)}
+	25% {color: var(--yellow);}
+	50%{color: var(--blue)}
+	75%{color: var(--aqua)}
+	from {color: var(--white);}
+}
+/*moon--------------------------------------*/	
+.circle {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	bottom: 200px;
+	left:800px;
+	background: var(--yellow);
+	border-radius: 100px;
+	animation: sun1 12s linear infinite;
+	
+}
+.circle2 {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	bottom: 200px;
+	left:750px;
+	background: var(--blue);
+	border-radius: 100px;
+	z-index: 1;
+	animation: sun 12s linear infinite;
+}
+@keyframes sun {
+	0%{background-color: var(--sunDown); left:-450px; bottom:10px}
+	50% { bottom:400px;}
+	100%{background-color:var(--blue); lef:450px; bottom:300px;}
+}
+@keyframes sun1 {
+	0%{background-color: var(--yellow); left:-400px; bottom:20px}
+	50% {background-color:var(--yellow); bottom:350px;}
+	100%{background-color:transparent; left:700px; bottom:250px;}
+}
+/*house------------------------------------*/
+.square{
+	display: block;
+	position: absolute;
+	bottom:0px;
+	left: 320px;
+	width: 100px;
+	height: 80px;
+	background: black;
+}
+.roof{
+	display: block;
+	position: absolute;
+	bottom: 80px;
+	left:310px;
+	width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 60px solid black;
+
+}
+.window{
+	width: 30px;
+	height: 30px;
+	color: white;
+	position:absolute;
+	z-index: 10;
+	bottom: 20px;
+	left: 360px;
+	animation: church 12s linear infinite;
+	animation-delay: 1s;
+}
+/*-------------------------------------------*/
+.square2{
+	display: block;
+	position: absolute;
+	bottom:0px;
+	left: 580px;
+	width: 100px;
+	height: 100px;
+	background: black;
+}
+.roof2{
+	display: block;
+	position: absolute;
+	bottom: 100px;
+	left:570px;
+	width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 60px solid black;
+
+}
+.window2{
+	width: 20px;
+	height: 20px;
+	color: white;
+	position:absolute;
+	z-index: 10;
+	bottom: 20px;
+	left: 550px;
+	animation: church 12s linear infinite;
+	animation-delay: 2s;
+}
+/*-------------------------------------------*/
+.square3{
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom:0px;
+	left: 510px;
+	width: 100px;
+	height: 80px;
+	background: black;
+}
+.roof3{
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 80px;
+	left:500px;
+	width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 60px solid black;
+
+}
+.window3{
+	width: 30px;
+	height: 30px;
+	color: white;
+	position:absolute;
+	z-index: 10;
+	bottom: 40px;
+	left: 630px;
+	animation: church 12s linear infinite;
+	animation-delay: 1s;
+}
+/*-------------------------------------------*/
+.square4{
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom:0px;
+	left: 720px;
+	width: 100px;
+	height: 80px;
+	background: black;
+}
+.roof4{
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 80px;
+	left: 710px;
+	width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 60px solid black;
+
+}
+.window4{
+	width: 20px;
+	height: 20px;
+	color: white;
+	position:absolute;
+	z-index: 10;
+	bottom: 20px;
+	left: 750px;
+	animation: church 12s linear infinite;
+	animation-delay: 2s;
+}
+/*tree---------------------------------------*/
+.tree1{
+	display: block;
+	position: absolute;
+	bottom: 100px;
+	left:160px;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 100px solid var(--sapin);
+
+}
+.tree2{
+	display: block;
+	position: absolute;
+	bottom: 50px;
+	left:160px;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 100px solid var(--sapin);
+
+}
+.tree3{
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left:160px;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 100px solid var(--sapin);
+
+}
+/*-------------------------------------------*/
+.tree4{
+	display: block;
+	position: absolute;
+	bottom: 100px;
+	left:250px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 120px solid var(--sapin);
+
+}
+.tree5{
+	display: block;
+	position: absolute;
+	bottom: 50px;
+	left:250px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 120px solid var(--sapin);
+
+}
+.tree6{
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left:250px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 120px solid var(--sapin);
+
+}
+/*--------------------------------------------*/
+.tree7{
+	display: block;
+	position: absolute;
+	bottom: 100px;
+	left:450px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 120px solid var(--sapin);
+
+}
+.tree8{
+	display: block;
+	position: absolute;
+	bottom: 50px;
+	left:450px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 120px solid var(--sapin);
+
+}
+.tree9{
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left:450px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 120px solid var(--sapin);
+
+}
+/*--------------------------------------------*/
+.tree10{
+	display: block;
+	position: absolute;
+	bottom: 100px;
+	left:700px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 120px solid var(--sapin);
+
+}
+.tree11{
+	display: block;
+	position: absolute;
+	bottom: 50px;
+	left:700px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 120px solid var(--sapin);
+
+}
+.tree12{
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left:700px;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 120px solid var(--sapin);
+
+}
+/*--------------------------------------------*/
+.tree13{
+	display: block;
+	position: absolute;
+	bottom: 100px;
+	left:800px;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 100px solid var(--sapin);
+
+}
+.tree14{
+	display: block;
+	position: absolute;
+	bottom: 50px;
+	left:800px;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 100px solid var(--sapin);
+
+}
+.tree15{
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left:800px;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 100px solid var(--sapin);
+
+}
+/*church-----------------------------------------*/
+.triangle{
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 200px solid black;
+	position: absolute;
+	bottom:100px;
+}
+.triangle2{
+	display: block;
+	position: absolute;
+	bottom: 100px;
+	left:120px;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 30px solid black;
+}	
+.rectangle {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left:10px;
+	width: 200px;
+	height: 100px;
+	background: black;
+}
+/*window church---------------------------------*/
+.cwc{
+	display: grid;
+	grid-column-gap: 30px;
+	grid-template-columns: auto auto auto;
+	position: absolute;
+	bottom: 55px;
+	left: 30px;
+}
+.cwc > div{
+	width: 30px;
+	height: 30px;
+	background: var(--white);
+	border-radius: 100px;
+	animation: church 12s  linear infinite;
+}
+.cws{
+	display: grid;
+	grid-column-gap: 30px;
+	grid-template-columns: auto auto auto;
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
+}
+.cws > div{
+	width: 30px;
+	height: 50px;
+	background: var(--white);
+	animation: church 12s  linear infinite;
+}
+.diamond{
+	display: grid;
+    grid: repeat(7, 10px) / auto-flow 12px;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+}
+.diamond > div {
+	background-color: none;
+	border: solid 0.9px;
+	border-color: black;
+	width: 7px;
+	height: 7px;
+	transform: rotate(45deg);
+}
+@keyframes church {
+	0%{background-color: grey;}
+	100%{background-color:var(--yellow);}
+}
+/* church bells---------------------------------*/
+.cbc{
+	width: 30px;
+	height: 30px;
+	background: rgb(68, 63, 63);
+	border-radius: 100px;
+	position: fixed;
+	bottom: 160px;
+	left: 43px;
+	animation: sky 12s linear infinite
+}
+.cbs{
+	width: 30px;
+	height: 50px;
+	background-color: rgb(68, 63, 63);
+	position: fixed;
+	bottom: 125px;
+	left: 43px;
+	animation: sky 12s linear infinite
+}
+.bh{
+	width: 25px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: yellowgreen;
+    position: absolute;
+    bottom: 165px;
+    left: 43px;
+}
+.bf{
+	width: 30px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: yellowgreen;
+	position: absolute;
+	z-index: 1;
+    bottom: 165px;
+	left: 40px;
+	animation: bell 750ms linear infinite alternate-reverse;
+}
+.song{
+	width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: yellow;
+    position: fixed;
+    bottom: 160px;
+	left: 50px;
+	animation: bell2 750ms linear infinite alternate-reverse;
+}
+/*
+.bh2{
+	width: 25px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: yellowgreen;
+    position: absolute;
+    bottom: 165px;
+    left: 55px;
+}
+.bf2{
+	width: 30px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: yellowgreen;
+    position: absolute;
+    bottom: 165px;
+    left: 52px;
+}
+.song2{
+	width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: yellow;
+    position: fixed;
+    bottom: 155px;
+    left: 62px;
+}
+*/
+@keyframes bell {
+	0%{transform: rotate(25deg);}
+	100%{transform: rotate(-25deg);}
+}
+@keyframes bell2 {
+	0%{left:43px;}
+	100%{left:60px; bottom:163px;}
+}
+/*clouds----------------------------------------*/
+.cloud{
+	height: 100px;
+	width: 300px;
+	border-radius: 75px;
+	position: absolute;
+	bottom: 300px;
+	z-index: 3;
+	animation: wind 12s linear infinite;
+	animation-delay: 2s
+}
+.cloud1{
+	height: 50px;
+	width: 100px;
+	border-radius: 75px;
+	position: fixed;
+	bottom: 270px;
+	z-index: 3;
+	animation: wind 12s linear infinite;
+	animation-delay: 2s
+}
+.cloud2{
+	height: 50px;
+	width: 100px;
+	border-radius: 75px;
+	position: fixed;
+	margin-left: 10%;
+	bottom: 410px;
+	z-index: 3;
+	animation: wind 12s linear infinite;
+	animation-delay: 2s;
+}
+@keyframes wind {
+	0%{background-color: transparent; left:-450px;}
+	100%{background-color:var(--cloud); left:900px;}
+}
+/*windmill---------------------------*/
+.rwm1{
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid black;
+	position: absolute;
+	bottom:100px;
+	left: 900px;
+}
+.rmw2{
+	position: absolute;
+	bottom: 100px;
+	left:950px;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 30px solid black;
+}
+.hwm{
+	position: absolute;
+	bottom: 0px;
+	left:910px;
+	width: 130px;
+	height: 100px;
+	background: black;
+}
+.door{
+	position: absolute;
+	bottom: 0px;
+	left: 950px;
+	width: 60px;
+	height: 70px;
+	border-radius: 50px 50px 0px 0px; 
+	background-color: rgb(78, 78, 78);
+}
+
+#wheels{
+	display: inline-block;
+	position:absolute;
+	bottom:0px;
+	left: 795px;
+	animation: wheel 15s linear infinite;
+}
+@keyframes wheel{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+  
+  
+
+
+	   
